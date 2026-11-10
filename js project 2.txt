@@ -1,0 +1,58 @@
+String Manipulation Functions:
+function reverse (str) {
+return str.split("").reverse().join("") ;
+}
+function count(str) {
+let i=1
+let c=0
+for(let i=1;i<=str.length ; i++)
+c++
+return c;
+}
+function Capitalize (str) {
+let words = str.split(" ");
+let result = "";
+
+for (let i = 0; i < words.length; i++) {
+ result += words[i][0].toUpperCase() + words[i].slice(1) + " ";
+ }
+return result.trim();
+}
+
+
+Array Functions:
+function findMax(arr) {
+let max = arr[0];
+for (let i = 0; i < arr.length; i++) {
+if (arr[i] > max) {
+ max = arr[i];
+ }
+}
+ return max;
+}
+function findMin(arr) {
+let min = arr[0];
+for (let i = 0; i < arr.length; i++) {
+if (arr[i] < min) {
+  min = arr[i];
+ }
+}
+return min;
+}
+function sumArray(arr){
+let sum=0;
+for(let i=0;i<arr.length;i++){     
+sum+=arr[i];
+}
+return sum;
+}
+function filterArray(arr){
+let result=[];
+for(let i=0;i<arr.length;i++){
+if(arr[i]%2===0){
+result.push(arr[i]);
+}
+}
+return result;
+}
+
